@@ -36,6 +36,7 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: "Aquire", sans-serif !important;
+  image-rendering: auto;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -43,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
+p{
+  quotes: initial;
+}
 p, a, li, button, ul {
   margin: 0;
   padding: 0;
@@ -93,7 +97,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #043247;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -236,7 +240,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -244,7 +248,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(54, 126, 170, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -307,7 +311,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #214065;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -339,6 +343,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+  object-fit: none;
 }
 
 /************ Projects Css ************/
