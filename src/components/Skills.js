@@ -3,7 +3,13 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import colorSharp from "../assets/img/color-sharp.png"
-import ProgressBar from "./ProgressCard";
+import VerticalProgressBar from "../components/ProgressCard"
+
+import 'react-circular-progressbar/dist/styles.css';
+
+
+
+
 
 export const Skills = () => {
   const responsive = {
@@ -26,6 +32,7 @@ export const Skills = () => {
     }
   };
 
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -35,28 +42,51 @@ export const Skills = () => {
               <h2>Skills</h2>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-               
-                <div className="item">
-                <ProgressBar  percentage={38} />
-                  <h5>Web Development</h5>
+
+
+
+
+                <div className="item ">
+                  <VerticalProgressBar
+                    title="HTML"
+                    percentage={90}
+                    icon="fa fa-html5"
+                    barColor="#e34f26"
+                  />
                 </div>
-                <div className="item">
-                <ProgressBar  percentage={10} />
-                  <h5>Brand Identity</h5>
+                <div className="item ">
+                  <VerticalProgressBar
+                    title="HTML"
+                    percentage={90}
+                    icon="fa fa-html5"
+                    barColor="#e34f26"
+                  />
                 </div>
-                <div className="item">
-                <ProgressBar  percentage={50} />
-                  <h5>Logo Design</h5>
+                <div className="item ">
+                  <VerticalProgressBar
+                    title="HTML"
+                    percentage={90}
+                    icon="fa fa-html5"
+                    barColor="#e34f26"
+                  />
                 </div>
-                <div className="item">
-                <ProgressBar  percentage={100} />
-                  <h5>Web Development</h5>
-
-
-
-
+                <div className="item ">
+                  <VerticalProgressBar
+                    title="JavaScript"
+                    percentage={80}
+                    icon="fa fa-js"
+                    barColor="#f7df1e"
+                  />
 
                 </div>
+
+
+
+
+
+
+
+
               </Carousel>
             </div>
           </div>

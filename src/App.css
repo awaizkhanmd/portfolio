@@ -560,45 +560,6 @@ added by awaiz
 
 */
 
-.progress-bar-container {
-  display: flex;
-  align-items: center;
-}
-
-.progress-bar {
-  width: 80%;
-  height: 20px;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  animation: progress-animation 2s ease-out;
-}
-
-.percentage {
-  margin-left: 10px;
-}
-
-@keyframes progress-animation {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: "${props=>props.percentage}%; }"
-}
-}
-.progress-bar::-webkit-progress-bar {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-.progress-bar::-webkit-progress-value {
-  background-color: #007bff;
-  border-radius: 5px;
-  animation: progress-animation 2s ease-out;
-}
 
 /************ Projects Css ************/
 .contact {
